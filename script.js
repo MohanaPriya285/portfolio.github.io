@@ -8,7 +8,7 @@ const EMAILJS_CONFIG = {
 };
 
 // Initialize EmailJS if keys are provided
-if (typeof emailjs !== 'undefined' && EMAILJS_CONFIG.PUBLIC_KEY !== "YOUR_EMAILJS_PUBLIC_KEY") {
+if (typeof emailjs !== 'undefined' && EMAILJS_CONFIG.PUBLIC_KEY !== "1IDMadPMkjBJFq70S") {
   emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
 }
 // =========================================================
@@ -110,7 +110,7 @@ function initContactForm() {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Sending...';
 
     try {
-      if (EMAILJS_CONFIG.PUBLIC_KEY === "YOUR_EMAILJS_PUBLIC_KEY") {
+      if (EMAILJS_CONFIG.PUBLIC_KEY === "1IDMadPMkjBJFq70S") {
         throw new Error('EmailJS not configured. Replace placeholders in script.js');
       }
       const result = await emailjs.sendForm(
