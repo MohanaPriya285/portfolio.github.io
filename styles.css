@@ -547,6 +547,95 @@ h2:hover:after {
   width: 24px;
 }
 
+/* ---------- Professional Experience Cards ---------- */
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.experience-header h3 {
+  font-size: 1.7rem;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.role {
+  background: var(--accent-soft);
+  color: var(--text-primary);
+  padding: 8px 18px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.experience-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.experience-meta span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.experience-meta i {
+  color: var(--accent);
+}
+
+.tech-stack {
+  margin-top: 24px;
+  padding: 14px 18px;
+  background: var(--accent-soft);
+  border-radius: 18px;
+  line-height: 1.7;
+  font-size: 0.92rem;
+  display: block;
+}
+
+.tech-stack strong {
+  color: var(--text-primary);
+}
+
+/* ---------- Mobile Responsive ---------- */
+
+@media (max-width: 768px) {
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-header h3 {
+    font-size: 1.4rem;
+  }
+
+  .experience-meta {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .role {
+    font-size: 0.82rem;
+  }
+}
+
 /* ---------- Footer ---------- */
 footer {
   text-align: center;
