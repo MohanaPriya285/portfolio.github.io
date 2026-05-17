@@ -96,30 +96,30 @@
 
     <!-- ========== CONTACT SECTION ========== -->
     <section id="contact" class="contact-section">
-      <div class="container fade-up">
-        <h2>Let's Connect</h2>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <div><i class="fas fa-envelope"></i> mohanapriyaveeraragavan@gmail.com</div>
-            <div><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu, India</div>
-            <div><i class="fas fa-briefcase"></i> Open to Full‑time Roles · Freelance Projects</div>
-          </div>
-          <form id="contactForm" class="dark-form card">
-            <input type="text" name="from_name" placeholder="Full name" required>
-            <input type="email" name="from_email" placeholder="Email address" required>
-            <input type="text" name="company" placeholder="Company / Organization (optional)">
-            <select name="project_type">
-              <option>Project type: Full‑time opportunity</option>
-              <option>Freelance / Contract</option>
-              <option>Consulting / Code audit</option>
-            </select>
-            <textarea name="message" rows="4" placeholder="Tell me about your vision, timeline, and goals" required></textarea>
-            <button type="submit" class="btn btn-primary">Send message <i class="fas fa-arrow-right"></i></button>
-          </form>
-        </div>
+  <div class="container fade-up">
+    <h2>Let's Connect</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div><i class="fas fa-envelope"></i> mohanapriyaveeraragavan@gmail.com</div>
+        <div><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu, India</div>
+        <div><i class="fas fa-briefcase"></i> Open to Full‑time Roles · Freelance Projects</div>
       </div>
-    </section>
-  </main>
+      <form id="contactForm" class="dark-form card">
+        <input type="text" name="from_name" placeholder="Full name" required>
+        <!-- Changed 'from_email' to 'reply_to' to match EmailJS template -->
+        <input type="email" name="reply_to" placeholder="Email address" required>
+        <input type="text" name="company" placeholder="Company / Organization (optional)">
+        <select name="project_type">
+          <option>Project type: Full‑time opportunity</option>
+          <option>Freelance / Contract</option>
+          <option>Consulting / Code audit</option>
+        </select>
+        <textarea name="message" rows="4" placeholder="Tell me about your vision, timeline, and goals" required></textarea>
+        <button type="submit" class="btn btn-primary">Send message <i class="fas fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
 
   <!-- ========== FOOTER ========== -->
   <footer>
